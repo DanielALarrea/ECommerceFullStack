@@ -1,4 +1,4 @@
-const { Sequelize } = require('.');
+// const { Sequelize } = require('.');
   
 module.exports = (sequelize, Sequelize) => {
     var SequelizeTest = sequelize.define('sequelizetest', {
@@ -9,4 +9,5 @@ module.exports = (sequelize, Sequelize) => {
           type: Sequelize.STRING
         }
       });
+    return SequelizeTest;
 }

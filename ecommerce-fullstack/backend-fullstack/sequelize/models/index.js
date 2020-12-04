@@ -22,4 +22,13 @@ db.sequelize = sequelize;
 
 db.sequelizetest = require("./sequelizetest.js")(sequelize, Sequelize);
 
+// db.sequelizetest = sequelize.define('sequelizetest', {
+//     firstName: {
+//       type: Sequelize.STRING
+//     },
+//     lastName: {
+//       type: Sequelize.STRING
+//     }
+//   });
+
 module.exports = db;

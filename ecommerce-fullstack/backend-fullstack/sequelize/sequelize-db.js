@@ -16,16 +16,16 @@ var db = require('./models'),
 //     console.log('Unable to connect to the database:', err);
 //   });
 
-// var SequelizeTest = db.sequelizetest;
+var SequelizeTest = db.sequelizetest;
 
-  var SequelizeTest = sequelize.define('sequelizetest', {
-    firstName: {
-      type: Sequelize.STRING
-    },
-    lastName: {
-      type: Sequelize.STRING
-    }
-  });
+//   var SequelizeTest = sequelize.define('sequelizetest', {
+//     firstName: {
+//       type: Sequelize.STRING
+//     },
+//     lastName: {
+//       type: Sequelize.STRING
+//     }
+//   });
   
   // force: true will drop the table if it already exists
   SequelizeTest.sync({force: true}).then(function () {
