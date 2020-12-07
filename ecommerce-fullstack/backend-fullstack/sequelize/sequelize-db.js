@@ -7,6 +7,8 @@ var db = require('./models'),
     sequelize = db.sequelize,
     Sequelize = db.Sequelize;
 
+var testController = require('./controllers/test.controller');
+
 // sequelize
 //   .authenticate()
 //   .then(function(err) {
@@ -28,16 +30,16 @@ var SequelizeTest = db.sequelizetest;
 //   });
   
   // force: true will drop the table if it already exists
-  SequelizeTest.sync({force: true}).then(function () {
-    // Table created
-    return SequelizeTest.create({
-      firstName: 'John',
-      lastName: 'Hancock'
-    });
-  });
+  // SequelizeTest.sync({force: true}).then(function () {
+  //   // Table created
+  //   return SequelizeTest.create({
+  //     firstName: 'John',
+  //     lastName: 'Hancock'
+  //   });
+  // });
 
-  SequelizeTest.findAll().then(function(sequelizetests) {
-    console.log(sequelizetests);
-  });
+  // SequelizeTest.findAll().then(function(sequelizetests) {
+  //   console.log(sequelizetests);
+  // });
 
 // module.exports = sequelize;
